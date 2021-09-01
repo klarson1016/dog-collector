@@ -1,0 +1,99 @@
+nav {
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+main > section {
+  width: 100%;
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-logo-container {
+  display: none;
+}
+
+.logo-container {
+  max-width: 450px;
+}
+
+.cat-container {
+  width: 80%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.login h1 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  margin: 10px 0 16px 0;
+}
+
+.login > p {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login label {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.login input {
+  font-size: 1.2rem;
+  padding: 2px;
+}
+
+.login .btn {
+  align-self: flex-end;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    justify-content: space-around;
+  }
+
+  main > section {
+    width: 40%;
+    min-height: calc(100vh - 50px);
+  }
+
+  .login {
+    border: rgb(36, 116, 248) solid 2px;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .logo-container {
+    max-width: 520px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    margin-top: 0;
+  }
+
+  main > section {
+    padding: 0 5px;
+    min-height: calc(100vh - 57.6px);
+  }
+}
